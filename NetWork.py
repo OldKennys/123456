@@ -111,7 +111,7 @@ class fin(nn.Module):
 def main():
     model = fin(model = model_ft)
     input = torch.randn(16,3,448,448)
-    output1,output2 = model(input)
+    output1,output2,output3 = model(input)
     print(output1.size())
     print(output2.size())
 
